@@ -1,0 +1,475 @@
+/* ================================================= */
+/*                    GLOBAL                         */
+/* ================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f4f6f8;
+  color: #222;
+  transition: background 0.3s ease;
+}
+
+
+/* ================================================= */
+/*                    DARK MODE                      */
+/* ================================================= */
+
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+
+/* ================================================= */
+/*                    APP BAR                        */
+/* ================================================= */
+
+.app-bar {
+  background: linear-gradient(
+    90deg,
+    #1976d2,
+    #42a5f5
+  ) !important;
+}
+
+.menu-button {
+  margin-right: 12px !important;
+}
+
+.school-icon {
+  margin-right: 8px;
+}
+
+.app-title {
+  flex-grow: 1;
+  font-weight: 600 !important;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.notification-button {
+  margin-right: 5px !important;
+}
+
+.top-avatar {
+  width: 40px !important;
+  height: 40px !important;
+
+  background: #7b1fa2 !important;
+
+  font-weight: bold;
+}
+
+
+/* ================================================= */
+/*                    DRAWER                         */
+/* ================================================= */
+
+.drawer {
+  width: 280px;
+  min-height: 100vh;
+}
+
+.drawer-header {
+  position: relative;
+
+  padding: 30px 20px;
+
+  text-align: center;
+}
+
+.drawer-close {
+  position: absolute !important;
+
+  top: 8px;
+  right: 8px;
+}
+
+.drawer-avatar {
+  width: 80px !important;
+  height: 80px !important;
+
+  margin: 0 auto 12px auto;
+
+  background: #1976d2 !important;
+
+  font-size: 30px !important;
+  font-weight: bold;
+}
+
+.drawer-name {
+  font-weight: 600 !important;
+}
+
+
+/* ================================================= */
+/*                  MAIN CONTENT                     */
+/* ================================================= */
+
+.main-content {
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding: 40px 35px;
+}
+
+.welcome-section {
+  margin-bottom: 35px;
+}
+
+.welcome-title {
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+}
+
+.welcome-description {
+  color: #777;
+}
+
+
+/* ================================================= */
+/*                  DASHBOARD CARDS                  */
+/* ================================================= */
+
+.card-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.dashboard-card {
+  min-height: 280px;
+
+  border-radius: 16px !important;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 25px
+    rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-content {
+  height: 100%;
+
+  min-height: 280px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  gap: 12px;
+}
+
+.card-title {
+  font-weight: 600 !important;
+}
+
+
+/* ================================================= */
+/*                CIRCULAR PROGRESS                  */
+/* ================================================= */
+
+.progress-container {
+  position: relative;
+
+  display: inline-flex;
+
+  margin: 15px;
+}
+
+.progress-value {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* ================================================= */
+/*                     BADGE                         */
+/* ================================================= */
+
+.badge-container {
+  margin: 20px;
+}
+
+.large-icon {
+  font-size: 80px !important;
+
+  color: #1976d2;
+}
+
+
+/* ================================================= */
+/*                    AVATAR                         */
+/* ================================================= */
+
+.large-avatar {
+  width: 100px !important;
+  height: 100px !important;
+
+  background: #7b1fa2 !important;
+
+  font-size: 38px !important;
+
+  font-weight: bold;
+}
+
+
+/* ================================================= */
+/*                     TABS                          */
+/* ================================================= */
+
+.tabs-card {
+  margin-top: 35px;
+
+  border-radius: 16px !important;
+
+  overflow: hidden;
+}
+
+.tab-content {
+  min-height: 180px;
+
+  padding: 30px !important;
+}
+
+.tab-title {
+  margin-bottom: 10px !important;
+
+  font-weight: 600 !important;
+}
+
+
+/* ================================================= */
+/*                  COURSE LIST                      */
+/* ================================================= */
+
+.course-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.course-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  background: #f5f5f5;
+}
+
+
+/* ================================================= */
+/*                  PROFILE TAB                      */
+/* ================================================= */
+
+.profile-tab {
+  text-align: center;
+}
+
+.profile-tab-avatar {
+  width: 100px !important;
+
+  height: 100px !important;
+
+  margin: 0 auto 15px auto;
+
+  background: #7b1fa2 !important;
+
+  font-size: 38px !important;
+}
+
+
+/* ================================================= */
+/*                  SETTINGS                         */
+/* ================================================= */
+
+.settings-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  max-width: 600px;
+
+  margin-top: 25px;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  background: #f5f5f5;
+}
+
+
+/* ================================================= */
+/*                   TOOLTIP                         */
+/* ================================================= */
+
+.tooltip-card {
+  margin-top: 35px;
+
+  border-radius: 16px !important;
+
+  text-align: center;
+}
+
+.tooltip-title {
+  font-weight: 600 !important;
+
+  margin-bottom: 8px !important;
+}
+
+.tooltip-description {
+  margin-bottom: 20px !important;
+}
+
+.tooltip-button {
+  margin-top: 10px !important;
+}
+
+
+/* ================================================= */
+/*                    FOOTER                         */
+/* ================================================= */
+
+.footer {
+  padding: 25px;
+
+  text-align: center;
+
+  background: #1976d2;
+
+  color: white;
+
+  margin-top: 20px;
+}
+
+
+/* ================================================= */
+/*                  DARK MODE CSS                    */
+/* ================================================= */
+
+.dark-mode .welcome-description {
+  color: #bdbdbd;
+}
+
+.dark-mode .dashboard-card,
+.dark-mode .tabs-card,
+.dark-mode .tooltip-card {
+  background: #1e1e1e;
+
+  color: white;
+}
+
+.dark-mode .course-item,
+.dark-mode .settings-row {
+  background: #2a2a2a;
+
+  color: white;
+}
+
+
+/* ================================================= */
+/*                  RESPONSIVE                       */
+/* ================================================= */
+
+@media (max-width: 1000px) {
+
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .main-content {
+    padding: 25px 15px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .app-title {
+    font-size: 16px !important;
+  }
+
+  .switch-container {
+    margin-right: 0;
+  }
+
+  .drawer {
+    width: 250px;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .school-icon {
+    display: none;
+  }
+
+  .app-title {
+    font-size: 14px !important;
+  }
+
+  .main-content {
+    padding: 20px 10px;
+  }
+
+}
