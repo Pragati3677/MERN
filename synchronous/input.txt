@@ -1,0 +1,2 @@
+Hello, this is a synchronous Node.js program.
+Node.js reads this file synchronously.
