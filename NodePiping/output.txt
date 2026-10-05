@@ -1,0 +1,2 @@
+Hello, this is Node.js piping practical.
+Piping is used to transfer data from one stream to another stream.

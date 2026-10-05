@@ -1,0 +1,3 @@
+JavaScript is a very simple language.
+Node.js is a JavaScript runtime environment.
+We are performing file compression and decompression.
